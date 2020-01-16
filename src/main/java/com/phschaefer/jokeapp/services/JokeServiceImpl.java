@@ -1,8 +1,10 @@
-package com.phschaefer.jokeapp;
+package com.phschaefer.jokeapp.services;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
-import services.JokeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class JokeServiceImpl implements JokeService {
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;
